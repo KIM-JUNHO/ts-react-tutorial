@@ -4,11 +4,14 @@ import "./App.css";
 import Greetings from "./Greetings";
 
 const App: React.FC = () => {
+  const onClick = (name: string) => {
+    console.log(`${name} says hello`);
+  };
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Greetings name="prpr48" />
+        <Greetings name="prpr48" onClick={onClick} />
       </header>
     </div>
   );
