@@ -5,11 +5,13 @@ type GreetingsProps = {
   mark: string;
 };
 
-const Greetings = ({ name, mark }: GreetingsProps) => (
-  <div>
-    Hello, {name} {mark}
-  </div>
-);
+function Greetings({ name, mark }: GreetingsProps) {
+  return (
+    <div>
+      Hello, {name} {mark}
+    </div>
+  );
+}
 
 Greetings.defaultProps = {
   mark: "!"
